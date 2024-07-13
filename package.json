@@ -1,6 +1,6 @@
 {
-  "homepage": "https://anshika-029.github.io/Biznivate",
   "name": "webbiznivate",
+  "homepage": "https://anshika-029.github.io/Biznivate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,7 +37,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
     "react-router-dom": "^6.24.1"
   }
 }
