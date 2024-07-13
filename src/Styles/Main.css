@@ -1,0 +1,207 @@
+.seperation {
+    background-color: #51515d8a;
+    width: 100%;
+    height: 0.6vh;
+}
+
+main h1 {
+    font-size: 67px;
+    text-align: center;
+    margin: 12vh auto 12vh auto;
+    max-width: 70vw;
+    color: white;
+    text-shadow: -2px 9px 4px rgba(0, 0, 0, 0.7);
+}
+
+.back {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/212b34104893379.5f6cc87656bf0.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* opacity: 0.9; */
+    margin-top: 8vh;
+    padding: 15px 0 5px 0;
+    position: relative;
+}
+
+.h {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 10vh 4vw 0 0;
+}
+
+.b {
+    background-color: rgb(7, 6, 11);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 22px 35px;
+    border-radius: 40px;
+    border: 1px solid white;
+    margin-top: 44px;
+}
+
+.b:hover {
+    background-color: #282c5a6e;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+}
+
+.imgtext {
+    margin: auto;
+    width: 76%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.textimg {
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+}
+
+.shead {
+    font-size: 40px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 8vh;
+}
+
+.fhead {
+    font-size: 40px;
+    text-align: center;
+    width: 38%;
+    padding: 9px;
+    margin: 11vh auto 8vh auto;
+    background-color: #7071754f;
+    border-radius: 19px;
+}
+
+.textimg p {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5vh 5vh 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textimg img {
+    width: 47%;
+    height: auto;
+    border-radius: 50px;
+    border: 5px solid black;
+    float: right;
+    margin-top: 5vh;
+}
+
+
+.first {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.secimg img {
+    height: 23vh;
+    width: 20vw;
+    border-radius: 50px;
+    border: 3px solid #282c5a6e;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.secimg img:hover{
+    border: 3px solid black;
+}
+
+.first .hf {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: cursive;
+    margin: 15vh 15vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.first .hf:hover{
+    color: #282c5a6e;
+}
+
+.first .pf {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+hr{
+    width: 76%;
+    margin: 10px auto;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav button {
+    font-size: larger;
+    margin-top: 16%;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-size: 60px;
+    cursor: pointer;
+    position: absolute;
+    color: rgb(182, 176, 165);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.imgtext img {
+    border: 2px solid black;
+    border-radius: 90px;
+    height: 40vh;
+    width: 560px;
+    float: right;
+}
+
+.ques {
+    display: flex;
+    color: black;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 20px;
+}
+
+.backg{
+    background-image: url('https://media.istockphoto.com/id/494094966/vector/question-mark-3d-seamless-wallpaper-pattern.jpg?s=612x612&w=0&k=20&c=u56aWdaxkF1T4k745zLP3egh7scxb4FjwaNpZpiLA44=');
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-position: top;
+    border: 3px solid black;
+    padding: 80px;
+    width: 60%;
+    border-radius: 30px;
+    margin:20px auto;
+}
+
+.ques> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.ques> :nth-child(2) {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}

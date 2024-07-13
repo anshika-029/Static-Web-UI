@@ -1,4 +1,5 @@
 {
+  "homepage": "https://anshika-029.github.io/Biznivate",
   "name": "webbiznivate",
   "version": "0.1.0",
   "private": true,
@@ -34,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "react-router-dom": "^6.24.1"
   }
 }

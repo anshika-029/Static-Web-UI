@@ -1,0 +1,50 @@
+.foot {
+    /* background-color: rgb(7, 6, 11); */
+    background-color: #17161A;
+    display: grid;
+    grid-template-columns: 28vw 15vw 13vw 16vw;
+    padding: 14vh 8vw 11vh 12vw;
+}
+
+footer ul li {
+    color: #ffff;
+    padding: 5px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover{
+    /* text-decoration: none; */
+    color: rgb(174, 174, 174);
+}
+
+.fh {
+    font-weight: bold;
+}
+
+.copyright{
+    color: #ffff;
+    text-align: center;
+    background-color: #17161A;
+    padding: 2vh 0;
+    font-size: 1.2em;
+}
+
+.fhr{
+    color: white;
+    padding: 0;
+    margin: auto;
+    width: 76%;
+}
+
+.icon{
+    padding: 0 8px;
+    color: white;
+    font-size: 20px;
+}
+.icon:hover{
+    color: wheat;
+}
