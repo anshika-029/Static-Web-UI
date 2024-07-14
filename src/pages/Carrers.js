@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Service() {
+function Carrers() {
   return (
     <div>
       <div className='headbg'>
@@ -24,4 +24,4 @@ function Service() {
   )
 }
 
-export default Service
+export default Carrers

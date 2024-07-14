@@ -1,0 +1,18 @@
+.termshp{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #3c4043;
+}
+
+span.termshp{
+    padding: 0;
+}
+
+span.termspara{
+    padding: 0;
+}
+
+.last{
+    padding-bottom: 20px;
+}

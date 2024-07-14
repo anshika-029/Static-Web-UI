@@ -34,10 +34,10 @@ function Footer() {
     <ul>
         <li className="fh">SERVICES</li>
         <br/>
-        <li>Consulting</li>
-        <li>Human Resources</li>
-        <li>Accounting</li>
-        <li>Marketing & SEO</li>
+        <li><a href='/consulting'>Consulting</a></li>
+        <li><a href='/resources'>Human Resources</a></li>
+        <li><a href='/accounting'>Accounting</a></li>
+        <li><a href='/marketing'>Marketing & SEO</a></li>
     </ul>
 </div>
 
@@ -45,10 +45,10 @@ function Footer() {
     <ul>
         <li className="fh">ABOUT</li>
         <br/>
-        <li>About us</li>
-        <li>Privacy Policy</li>
-        <li>Our Blog</li>
-        <li><a href='/termsConditions'>Terms & Conditions</a></li>
+        <li><a href='/about'>About us</a></li>
+        <li><a href='privacypolicy'>Privacy Policy</a></li>
+        <li><a href='/blog'>Our Blog</a></li>
+        <li><a href='/termsconditions'>Terms & Conditions</a></li>
     </ul>
 </div>
 
@@ -56,8 +56,8 @@ function Footer() {
     <ul>
         <li className="fh">CONTACT</li>
         <br/>
-        <li> <a href='#' className='icon'><i class="fa-solid fa-phone"></i></a> +1234 567 8900 </li>
-        <li> <a href='#' className='icon'><i class="fa-solid fa-envelope"></i></a> consulting@biznivate.com </li>
+        <li> <i class="fa-solid fa-phone"></i> +1234 567 8900 </li>
+        <li> <i class="fa-solid fa-envelope"></i> consulting@biznivate.com </li>
         
     </ul>
 </div>

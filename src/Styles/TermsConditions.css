@@ -1,3 +1,27 @@
 .terms{
-    height: 45vh;
+    height: 55vh;
+}
+
+.termshead {
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #3c4043;
+}
+
+.termspara {
+    font-weight: 400;
+    padding-bottom: 26px;
+}
+
+.conditions{
+    padding: 7vh 20vw 17vh 10vw;
+}
+
+.termshead.ad{
+    font-size: 1.2em;
+}
+
+.termspara.ad{
+    padding-bottom: 1px;
 }

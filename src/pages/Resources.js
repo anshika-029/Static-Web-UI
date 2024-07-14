@@ -1,6 +1,7 @@
 import React from 'react'
+import '../Styles/Resources.css'
 
-function Service() {
+function Resources() {
   return (
     <div>
       <div className='headbg'>
@@ -24,4 +25,4 @@ function Service() {
   )
 }
 
-export default Service
+export default Resources

@@ -6,7 +6,7 @@
 }
 
 header {
-    box-shadow: -5px 10px 30px rgb(0 0 0);
+    box-shadow: -5px 1px 29px -4px rgb(0 0 0);
     z-index: 1;
     background-color: white;
     top: 0;
@@ -26,34 +26,18 @@ nav li {
     list-style: none;
 }
 
+
 nav li a {
-    color: black;
-    text-decoration: none;
-    padding: 6px 20px;
-    font-size: 15px;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* text-transform: uppercase; */
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin-top: 14px;
-}
-
-nav ul li {
-    padding: 2px 19px;
-    margin: 3px;
-    cursor: pointer;
-    align-items: center;
+    padding: 26px 23px 0 23px;
+    font-size: 1.08em;
     display: flex;
     font-weight: 500;
+    text-decoration: none;
+    color: black;
 }
-
-nav ul li:hover {
+nav ul li a:hover {
     color: gray;
-}
+} 
 
 .logo {
     cursor: pointer;
@@ -78,4 +62,4 @@ nav ul li:hover {
     background-color: #282c5a6e;
     cursor: pointer;
     color: black;
-} 
+}

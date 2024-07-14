@@ -10,7 +10,9 @@ function Contact() {
         <div className='head2'>Reach out to us from our contact form and we will get back to you shortly.</div>
       </div>
       <div className='flexwrap'>
-        <img src='https://media.istockphoto.com/id/1351993340/photo/asian-business-person-responding-at-the-customer-center.jpg?s=612x612&w=0&k=20&c=zrgcIgJo129KqYSZ3IhwGP3ExwGgYHbXu0t1ZID5B_I='></img>
+        <div className='gridimg'>
+        {/* <img src='https://media.istockphoto.com/id/1351993340/photo/asian-business-person-responding-at-the-customer-center.jpg?s=612x612&w=0&k=20&c=zrgcIgJo129KqYSZ3IhwGP3ExwGgYHbXu0t1ZID5B_I='></img> */}
+        </div>
 
         <div className='ccontainer'>
           <div className='contacth3'> Let's Talk </div>
@@ -39,7 +41,7 @@ function Contact() {
             </div>
           </div>
           <input type='checkbox'/>
-          <label> I agee with <a href='/termsConditions'>Terms & Conditions</a>. </label> <br></br>
+          <label> I agee with <a href='/termsconditions'>Terms & Conditions</a>. </label> <br></br>
           <button className='but'> Send Message</button>
           <div className='required'> * These fields are required. </div>
         </form>

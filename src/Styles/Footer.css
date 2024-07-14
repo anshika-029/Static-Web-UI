@@ -41,10 +41,17 @@ footer ul li a:hover{
 }
 
 .icon{
-    padding: 0 8px;
+    padding-right: 25px;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
 }
 .icon:hover{
-    color: wheat;
+    color: #1338cb;
+}
+
+.icon.dead:hover{
+    color: white;
+}
+.icon.dead{
+    padding: 0;
 }

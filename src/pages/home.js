@@ -7,10 +7,7 @@ import Main from '../components/Main'
 function home() {
   return (
     <div>
-      <Navbar/>
       <Main/>
-      {/* <Contact/> */}
-      <Footer/>
     </div>
   )
 }

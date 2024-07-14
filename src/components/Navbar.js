@@ -10,12 +10,12 @@ function Navbar() {
 
         <nav>
             <ul>
-                <li> Home </li>
+                <li> <a href='/'>Home</a> </li>
                 <li> <a href='/service'>Services</a> </li>
-                <li> Carrers </li>
-                <li> About Us </li>
-                <li> Blogs </li>
-                <a href='/contact'> <button className='but'> Contact </button></a>
+                <li> <a href='/carrers'>Carrers</a> </li>
+                <li> <a href='/about'>About Us</a> </li>
+                <li> <a href='/blog'>Blogs</a> </li>
+                <a href='/contact'><button className='but'>Contact </button></a>
             </ul>
         </nav>
     </header>
