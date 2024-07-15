@@ -5,26 +5,31 @@ function Blog() {
   return (
     <div>
       <div className='headbg'>
-        <div className='head1'>Get in Touch</div>
-        <div className='head2'>Have any questions?</div>
-        <div className='head2'>Reach out to us from our contact form and we will get back to you shortly.</div>
+        <div className='head1'>Heading</div>
+        <div className='head2'>Lorem ipsum dolor Lorem, ipsum.</div>
+        <div className='head2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, tempore aspernatur?</div>
       </div>
       <div className='flexwrap'>
-        <div className='gridimg'>
+        <div className='gridimg blog'>
         {/* <img src='https://media.istockphoto.com/id/1351993340/photo/asian-business-person-responding-at-the-customer-center.jpg?s=612x612&w=0&k=20&c=zrgcIgJo129KqYSZ3IhwGP3ExwGgYHbXu0t1ZID5B_I='></img> */}
         </div>
 
         <div className='ccontainer'>
-          <div className='contacth3'> Let's Talk </div>
-          <p>Let's make something great together. We are trusted by over 5000+ clients. Join them by using our services and grow your business.</p>
-          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <div className='contacth3'> Heading </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic earum alias fugit repellendus repudiandae, maiores in ?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, inventore praesentium odit aperiam, culpa atque veniam quod id tenetur voluptates rem deleniti labore sapiente, magni laudantium provident autem unde cumque facere pariatur quos facilis distinctio nostrum corrupti!.</p>
           <button className='but'> Join Us </button>
         </div>
       </div>
 
 
-      <div className='pggg'> 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptate, ipsum inventore deleniti soluta impedit quo placeat odio numquam modi, incidunt tenetur? Aut cum assumenda voluptatibus cupiditate voluptatum blanditiis nobis sint, fugit eaque accusantium vitae vel rem fugiat libero, quasi perferendis officia illo dolorem. Quis beatae illo itaque repudiandae! Fugiat, alias quae! Illo officiis voluptate placeat id vitae hic laborum corporis, tempora unde nostrum doloremque recusandae, iure natus ab soluta a aperiam ipsa alias quo deleniti vero esse obcaecati illum. Consequatur, eum. Amet ad sit at, quod voluptas dolore cumque architecto saepe culpa quas delectus sapiente nobis, explicabo assumenda eos cupiditate voluptatibus dolorem numquam veniam minima sequi iure et. Vitae eligendi atque et consequuntur quibusdam eaque eos aut, nulla itaque, nihil quas natus architecto nemo molestiae accusantium rem blanditiis! Aut ex quod minima ratione odit ipsum non ducimus dolor id totam magni quaerat deleniti officia dicta distinctio sapiente officiis quia libero voluptatum quae, nisi facilis ullam. Quis saepe itaque asperiores dolorum natus, exercitationem temporibus possimus eum consequuntur. Dolorum nesciunt quia incidunt laudantium excepturi debitis inventore provident reiciendis quo omnis. Similique in ea et, suscipit aperiam facilis nobis animi id culpa fugit modi quasi qui, quos voluptatibus quidem sit molestias maiores temporibus deserunt nulla optio rem assumenda! Corrupti dolorem, quod ipsa facere nisi dolorum quidem aliquid distinctio perferendis repellat ratione, debitis, nam omnis porro ipsum corporis! Quisquam id at, suscipit enim debitis delectus eveniet!
+      <div className='blogcontainer'> 
+          <a><div className='blogcards c1'><div className='c1h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards c2'><div className='c2h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards c3'><div className='c3h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards c4'><div className='c4h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards c5'><div className='c5h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards c6'><div className='c6h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
         </div>
     </div>
   )
