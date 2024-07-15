@@ -15,7 +15,7 @@
     /* background-position: right; */
 }
 
-.c1 {
+.b1 {
     background-image: url('https://img.freepik.com/premium-photo/laptop-notebook-desk_1048944-30522547.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
     background-position-x: right;
@@ -23,7 +23,7 @@
 }
 
 
-.c1:hover {
+.b1:hover {
     background: linear-gradient(rgba(35, 122, 169, 0.89), rgba(0, 0, 0, 0.78)), url('https://img.freepik.com/premium-photo/laptop-notebook-desk_1048944-30522547.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
     cursor: pointer;
@@ -31,103 +31,103 @@
     background-position-y: bottom;
 } 
 
-.c1h {
+.b1h {
     margin: 50% 8px 5px 18px;
     color: white;
     font-size: 1.34em;
     font-weight: 700;
 }
 
-.c2 {
+.b2 {
     background-image: url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg');
     background-size: cover;
 }
 
-.c2:hover {
+.b2:hover {
     background: linear-gradient(rgba(35, 122, 169, 0.89), rgba(0, 0, 0, 0.78)), url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?cs=srgb&dl=pexels-veeterzy-303383.jpg&fm=jpg');
     background-size: cover;
     cursor: pointer;
 } 
 
-.c2h {
+.b2h {
     margin: 50% 8px 5px 18px;
     color: white;
     font-size: 1.34em;
     font-weight: 700;
 }
 
-.c3 {
+.b3 {
     background-image: url('https://img.freepik.com/premium-photo/office-leather-desk-table-with-computer_10371-6.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
     background-position: right;
 }
 
-.c3:hover {
+.b3:hover {
     background: linear-gradient(rgba(35, 122, 169, 0.89), rgba(0, 0, 0, 0.78)), url('https://img.freepik.com/premium-photo/office-leather-desk-table-with-computer_10371-6.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
     cursor: pointer;
     background-position: right;
 } 
 
-.c3h {
+.b3h {
     margin: 50% 8px 5px 18px;
     color: white;
     font-size: 1.34em;
     font-weight: 700;
 }
 
-.c4 {
+.b4 {
     background-image: url('https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720915200&semt=ais_user');
     background-size: cover;
     background-position: right;
 }
 
-.c4:hover {
+.b4:hover {
     background: linear-gradient(rgba(35, 122, 169, 0.89), rgba(0, 0, 0, 0.78)), url('https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720915200&semt=ais_user');
     background-size: cover;
     cursor: pointer;
     background-position: right;
 } 
 
-.c4h {
+.b4h {
     margin: 50% 8px 5px 18px;
     color: white;
     font-size: 1.34em;
     font-weight: 700;
 }
 
-.c5 {
+.b5 {
     background-image: url('https://img.freepik.com/free-photo/top-view-workspace-with-laptop-cup-tea_23-2148430815.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
 }
 
-.c5:hover {
+.b5:hover {
     background: linear-gradient(rgba(35, 122, 169, 0.89), rgba(0, 0, 0, 0.78)), url('https://img.freepik.com/free-photo/top-view-workspace-with-laptop-cup-tea_23-2148430815.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
     cursor: pointer;
 } 
 
-.c5h {
+.b5h {
     margin: 50% 8px 5px 18px;
     color: white;
     font-size: 1.34em;
     font-weight: 700;
 }
 
-.c6 {
+.b6 {
     background-image: url('https://img.freepik.com/free-photo/flat-lay-desktop-with-notebook-succulent_23-2148397836.jpg');
     background-size: cover;
     background-position: right;
 }
 
-.c6:hover {
+.b6:hover {
     background: linear-gradient(rgba(35, 122, 169, 0.89), rgba(0, 0, 0, 0.78)), url('https://img.freepik.com/free-photo/flat-lay-desktop-with-notebook-succulent_23-2148397836.jpg');
     background-size: cover;
     cursor: pointer;
     background-position: right;
 } 
 
-.c6h {
+.b6h {
     margin: 50% 8px 5px 18px;
     color: white;
     font-size: 1.34em;
@@ -145,4 +145,16 @@
     color: black;
     border: 2px solid black;
     background-color: #ffffffe3;
+}
+
+.pbdate {
+    width: 11vw;
+    height: 3vh;
+    font-size: 0.6em;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    text-align: center;
+    transform: skew(-18deg);
+    margin: 5px;
 }

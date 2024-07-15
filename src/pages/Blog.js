@@ -24,12 +24,12 @@ function Blog() {
 
 
       <div className='blogcontainer'> 
-          <a><div className='blogcards c1'><div className='c1h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-          <a><div className='blogcards c2'><div className='c2h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-          <a><div className='blogcards c3'><div className='c3h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-          <a><div className='blogcards c4'><div className='c4h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-          <a><div className='blogcards c5'><div className='c5h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
-          <a><div className='blogcards c6'><div className='c6h'>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards b1'><div className='b1h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards b2'><div className='b2h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards b3'><div className='b3h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards b4'><div className='b4h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards b5'><div className='b5h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
+          <a><div className='blogcards b6'><div className='b6h'><div className='pbdate'>Admin | August 15, 2023</div>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing.</div> <button className='but'>Read More</button></div></a>
         </div>
     </div>
   )
