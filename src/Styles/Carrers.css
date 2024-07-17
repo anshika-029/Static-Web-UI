@@ -1,0 +1,59 @@
+.carrercontainer {
+    margin: 50vh auto 25vh 7vw;
+    width: 87vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.carrer{
+    background-image: url('https://media.istockphoto.com/id/979622962/photo/hand-putting-wooden-cube-block-on-blue-background-with-word-career-and-copy-space-for-your.jpg?s=612x612&w=0&k=20&c=WtIeJMPJ-6ozlnpyps0R2TLwMSTYFtWAT6yRBQymRSg=');
+    background-position: right;
+}
+
+.carrercards {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 40vw;
+    height: 15vh;
+    cursor: pointer;
+    background-color: #d7dcfa;
+}
+
+.carrercards:hover{
+    background-color: #85a5e2e0;
+    transition: 0.4s;
+}
+
+.c1 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 30px 0 0 50px;
+    display: inline;
+}
+
+.c1h {
+    color: rgb(83, 83, 83);
+    font-weight: 600;
+    margin: -26px 0 0 50px;
+}
+
+.carrer-h-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.carrer-h-row .but{
+    margin: 33px 22px auto auto;
+    border: 2px solid black; 
+    
+}
+
+.carrercards .but:hover {
+    color: black;
+    border: 2px solid black;
+    background-color: #ffffffe3;
+    transition: 0.3s;
+}

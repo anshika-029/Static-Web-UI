@@ -10,9 +10,7 @@ function Blog() {
         <div className='head2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, tempore aspernatur?</div>
       </div>
       <div className='flexwrap'>
-        <div className='gridimg blog'>
-        {/* <img src='https://media.istockphoto.com/id/1351993340/photo/asian-business-person-responding-at-the-customer-center.jpg?s=612x612&w=0&k=20&c=zrgcIgJo129KqYSZ3IhwGP3ExwGgYHbXu0t1ZID5B_I='></img> */}
-        </div>
+        <div className='gridimg blog'></div>
 
         <div className='ccontainer'>
           <div className='contacth3'> Heading </div>

@@ -4,13 +4,12 @@ import '../Styles/PrivacyPolicy.css'
 function PrivacyPolicy() {
   return (
     <div>
-      <div className='pp'>
 
-        <div className='headbg terms'>
-          <div className='head1'>Privacy Policy</div>
-          <div className='head2'>In the Privacy Policy, we explain how we collect, use, share, retain and transfer information.</div>
-          <div className='head2'>We also let you know your rights. Each section of the Policy includes simpler language to make our practices easier to understand. </div>
-        </div>
+      <div className='headbg terms'>
+        <div className='head1'>Privacy Policy</div>
+        <div className='head2'>In the Privacy Policy, we explain how we collect, use, share, retain and transfer information.</div>
+        <div className='head2'>We also let you know your rights. Each section of the Policy includes simpler language to make our practices easier to understand. </div>
+      </div>
 
         <div className='conditions'>
 
@@ -57,7 +56,7 @@ function PrivacyPolicy() {
 
           <div className='termshead'>How We Use Your Information</div>
           <div className='termspara'>
-          We use the information we collect in the following ways:
+            We use the information we collect in the following ways:
           </div>
 
           <div>
@@ -82,7 +81,7 @@ function PrivacyPolicy() {
 
           <div className='termshead'>How We Share Your Information</div>
           <div className='termspara'>
-          We may share your information with:
+            We may share your information with:
           </div>
 
           <div>
@@ -102,12 +101,12 @@ function PrivacyPolicy() {
 
           <div className='termshead'>Data Security</div>
           <div className='termspara'>
-          We use administrative, technical, and physical security measures to protect your personal information. While we strive to protect your information, no method of transmission over the Internet or method of electronic storage is 100% secure.
+            We use administrative, technical, and physical security measures to protect your personal information. While we strive to protect your information, no method of transmission over the Internet or method of electronic storage is 100% secure.
           </div>
 
           <div className='termshead'>Your Data Protection Rights</div>
           <div className='termspara'>
-          Depending on your location, you may have the following rights regarding your personal data:
+            Depending on your location, you may have the following rights regarding your personal data:
           </div>
 
           <div>
@@ -141,12 +140,12 @@ function PrivacyPolicy() {
           </div>
 
           <div className='termspara'>
-          To exercise these rights, please contact us at the information provided below.
+            To exercise these rights, please contact us at the information provided below.
           </div>
 
           <div className='termshead'>Changes to This Privacy Policy</div>
           <div className='termspara'>
-          We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
+            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
           </div>
 
           <div className='termshead'>Contact Us</div>
@@ -161,8 +160,6 @@ function PrivacyPolicy() {
           <div className='termspara ad'>
             Bellary Road, Hebbal, BLR, KA 560024, IN
           </div>
-
-        </div>
 
 
 

@@ -15,6 +15,14 @@ import Resources from './pages/Resources'
 import Accounting from './pages/Accounting'
 import Marketing from './pages/Marketing'
 import Carrers from './pages/Carrers';
+import DigitalMarketingManager from './pages/DigitalMarketingManager';
+import SocialMediaManager from './pages/SocialMediaManager';
+import EmailMarketingManager from './pages/EmailMarketingManager';
+import Seo from './pages/Seo';
+import ContentMaker from './pages/ContentMaker';
+import Crm from './pages/Crm';
+import DigitalAnalytics from './pages/DigitalAnalytics';
+import LogoDesigner from './pages/LogoDesigner';
 
 
 function App() {
@@ -34,6 +42,14 @@ function App() {
     <Route path='/consulting' element={<Consulting/>}/>
     <Route path='/resources' element={<Resources/>}/>
     <Route path='/accounting' element={<Accounting/>}/>
+    <Route path='/digitalmarketingmanager' element={<DigitalMarketingManager/>}/>
+    <Route path='/socialmediamanager' element={<SocialMediaManager/>}/>
+    <Route path='/emailmarketingmanager' element={<EmailMarketingManager/>}/>
+    <Route path='/seo' element={<Seo/>}/>
+    <Route path='/contentmaker' element={<ContentMaker/>}/>
+    <Route path='/crm' element={<Crm/>}/>
+    <Route path='/digitalanalytics' element={<DigitalAnalytics/>}/>
+    <Route path='/logodesigner' element={<LogoDesigner/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
