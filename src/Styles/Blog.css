@@ -1,5 +1,5 @@
 .blogcontainer {
-    margin: 50vh 7vw 30vh 10vh;
+    margin: 22vh 8vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
@@ -8,11 +8,6 @@
 .blogcards {
     height: 53vh;
     border-radius: 12px;
-}
-
-.blog {
-    background-image: url('https://img.freepik.com/premium-photo/blog-text-office-desk-surrounded-with-notepad-laptop-computer_176814-709.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
-    /* background-position: right; */
 }
 
 .b1 {

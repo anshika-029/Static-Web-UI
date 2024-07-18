@@ -1,0 +1,63 @@
+.serviceimg {
+    background-image: url('https://www.shutterstock.com/image-photo/business-solutions-success-strategy-concept-600nw-313786025.jpg');
+    background-size: cover;
+}
+
+.service-container {
+    margin: 45vh auto 25vh 9vw;
+    padding: 2vw;
+    width: 81vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.servicecards {
+    border-radius: 21px;
+    border: 1px solid gray;
+    width: 36vw;
+    transition: 0.5s;
+}
+
+.servicecards:hover{
+    transform: scale(1.05);
+}
+
+.s1 {
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 700;
+    font-family: cursive;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.s1:hover{
+    color: #100ac7;
+}
+
+.s3 {
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+    font-size: 1.1em;
+    padding: 17px 16px 16px 36px;
+}
+
+.s2 img {
+    width: 36vw;
+    height: 30vh;
+    transition: transform 0.5s;
+}
+
+.s4 {
+    margin: 0;
+    border-radius: 0px;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 14px;
+    bottom: 0;
+}
+
+.s4:hover{
+    transition: 0.5s;
+}

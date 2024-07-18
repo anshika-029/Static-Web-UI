@@ -10,7 +10,7 @@ function Carrers() {
         <div className='head2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, repudiandae.</div>
       </div>
       <div className='flexwrap'>
-        <div className='gridimg carrer'></div>
+        <div className='carrerimg'></div>
 
         <div className='ccontainer'>
           <div className='contacth3'> Heading </div>
@@ -28,7 +28,7 @@ function Carrers() {
           </div>
           <div className='c1h'>Remote - UK - Full Time</div>
         </div>
-        
+
         <div className='carrercards'>
           <div className='carrer-h-row'>
             <div className='c1'>Social Media Manager</div><div><a href='/socialmediamanager'><button className='but'>Read More</button></a></div>
