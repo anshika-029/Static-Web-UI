@@ -6,7 +6,7 @@ function Navbar() {
     <div>
        <header>
         <div className="logo"><img width="180" height="50"
-                src="https://biznivate.com/biznivate/assets/biznivate/biznivate.svg" alt="logo"/></div>
+                src="https://img.freepik.com/free-vector/human-organization-logo-style-gradient-design-vector_474888-2130.jpg" alt="logo"/></div>
 
         <nav>
             <ul>

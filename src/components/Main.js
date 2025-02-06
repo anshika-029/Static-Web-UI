@@ -6,13 +6,13 @@ function Main() {
         <div>
             <main>
                 <div className="back">
-                    <h1>HR Innovation for streamlined success</h1>
+                    <h1>Designing the Future of Web Interfaces</h1>
                 </div>
 
                 <div className="seperation"></div>
 
                 <div className="imgtext">
-                    <div className="h"> Your partner for efficient, secure, and expertly managed HR processes.
+                    <div className="h"> Your partner for efficient, secure, and expertly managed beautiful Web Experiences.
                         <div>
                             <a href='/contact'> <button className='b'> Contact Us </button></a>
                         </div>
