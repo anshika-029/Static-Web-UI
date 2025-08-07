@@ -23,6 +23,7 @@
 
 .flexwrap {
     width: 80vw;
+    max-width: 1200px;
     /* height: 60vh; */
     background-color: white;
     margin: -23vh auto;
@@ -31,6 +32,7 @@
     /* flex-wrap: nowrap; */
     border-radius: 19px;
     box-shadow: 0.1px 1px 10px #17161A;
+    box-sizing: border-box;
 }
 
 .gridimg {
@@ -129,4 +131,144 @@ textarea{
 
 select#department{
     color: gray;
+}
+
+/* Responsive Design for Contact Page */
+@media screen and (max-width: 1200px) {
+    .flexwrap {
+        width: 90vw;
+        margin: -15vh auto;
+        grid-template-columns: 1fr;
+    }
+    
+    .flex-form {
+        width: 90vw;
+        margin: 25vh auto;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .head1 {
+        font-size: 3em;
+        padding: 15vh 0 2vh 0;
+    }
+    
+    .head2 {
+        font-size: 1.3em;
+        width: 90vw;
+    }
+    
+    .ccontainer {
+        margin: 40px;
+    }
+    
+    .contacth3 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headbg {
+        height: 60vh;
+    }
+    
+    .head1 {
+        font-size: 2.5em;
+        padding: 12vh 0 2vh 0;
+    }
+    
+    .head2 {
+        font-size: 1.1em;
+        width: 95vw;
+    }
+    
+    .flexwrap {
+        width: 95vw;
+        margin: -10vh auto;
+        padding: 20px;
+    }
+    
+    .flex-form {
+        width: 95vw;
+        margin: 15vh auto;
+    }
+    
+    .ccontainer {
+        margin: 25px;
+    }
+    
+    .contacth3 {
+        font-size: 2em;
+    }
+    
+    .cform input, .cform select, textarea {
+        padding: 8px 40px 8px 8px;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .ccontactdetails div {
+        font-size: 1.2em;
+        padding: 6px 0;
+    }
+    
+    .ccontactdetails span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headbg {
+        height: 50vh;
+    }
+    
+    .head1 {
+        font-size: 2em;
+        padding: 10vh 0 1vh 0;
+    }
+    
+    .head2 {
+        font-size: 1rem;
+        width: 98vw;
+    }
+    
+    .flexwrap {
+        width: 98vw;
+        margin: -5vh auto;
+        padding: 15px;
+    }
+    
+    .flex-form {
+        width: 98vw;
+        margin: 10vh auto;
+    }
+    
+    .ccontainer {
+        margin: 15px;
+    }
+    
+    .contacth3 {
+        font-size: 1.5em;
+    }
+    
+    .cform input, .cform select, textarea {
+        padding: 6px 20px 6px 6px;
+        font-size: 0.9rem;
+        margin: 5px;
+    }
+    
+    .ccontactdetails div {
+        font-size: 1rem;
+        padding: 4px 0;
+    }
+    
+    .ccontactdetails span {
+        font-size: 0.9rem;
+    }
+    
+    .cform button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }

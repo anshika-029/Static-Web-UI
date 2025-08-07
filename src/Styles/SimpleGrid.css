@@ -1,0 +1,63 @@
+/* Simple Grid Component Styles */
+.simple-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* Grid Columns */
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Auto-fit responsive grid */
+.grid-auto {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .simple-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-4,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .simple-grid {
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .simple-grid {
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+  }
+}

@@ -1,0 +1,166 @@
+/* Accounting Page Styles */
+@import './responsive.css';
+
+.accounting-page {
+    margin-top: 15vh;
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+.accounting-hero {
+    background: linear-gradient(135deg, #110934 0%, #26395e 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.accounting-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.accounting-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.accounting-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #110934;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.service-card .icon {
+    font-size: 3rem;
+    color: #26395e;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+    .accounting-page {
+        margin-top: 12vh;
+        padding: 1.5rem;
+    }
+    
+    .accounting-hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .accounting-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .accounting-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .accounting-services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .accounting-page {
+        margin-top: 20vh;
+        padding: 1rem;
+    }
+    
+    .accounting-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .accounting-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .accounting-hero p {
+        font-size: 1rem;
+    }
+    
+    .accounting-services {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .service-card {
+        padding: 1.2rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .service-card .icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .accounting-page {
+        margin-top: 25vh;
+        padding: 0.5rem;
+    }
+    
+    .accounting-hero {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .accounting-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .accounting-hero p {
+        font-size: 0.95rem;
+    }
+    
+    .service-card {
+        padding: 1rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-card .icon {
+        font-size: 2rem;
+    }
+}

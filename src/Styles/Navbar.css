@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 header {
@@ -28,8 +33,8 @@ nav li {
 
 
 nav li a {
-    padding: 26px 23px 0 23px;
-    font-size: 1.08em;
+    padding: 15px 18px 0 18px;
+    font-size: 1.05em;
     display: flex;
     font-weight: 500;
     text-decoration: none;
@@ -41,8 +46,13 @@ nav ul li a:hover {
 
 .logo {
     cursor: pointer;
-    margin-top: 13px;
+    margin-top: 8px;
     margin-left: -25px;
+}
+
+.logo img {
+    width: 140px !important;
+    height: 40px !important;
 }
 
 .but {
@@ -52,9 +62,9 @@ nav ul li a:hover {
     background-color: #17161A;
     color: white;
     font-weight: 600;
-    font-size: 1.01em;
-    border-radius: 28px;
-    padding: 17px 30px;
+    font-size: 0.95em;
+    border-radius: 25px;
+    padding: 12px 25px;
 }
 
 .but:hover {
@@ -62,4 +72,90 @@ nav ul li a:hover {
     background-color: #282c5a6e;
     cursor: pointer;
     color: black;
+}
+
+/* Responsive Design for Navbar */
+@media screen and (max-width: 1200px) {
+    header {
+        justify-content: space-between;
+        padding: 0 4vw;
+    }
+    
+    nav li a {
+        padding: 12px 12px 0 12px;
+        font-size: 0.95rem;
+    }
+    
+    .but {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
+        position: relative;
+    }
+    
+    .logo {
+        margin: 8px 0;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 8px 0;
+    }
+    
+    nav li a {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .but {
+        margin: 8px 0;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    main {
+        margin-top: 12vh !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 6px 0;
+    }
+    
+    .logo img {
+        width: 140px !important;
+        height: 38px !important;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+    }
+    
+    nav li a {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+    
+    .but {
+        margin: 6px 0;
+        padding: 8px 15px;
+        font-size: 0.75rem;
+    }
+    
+    main {
+        margin-top: 20vh !important;
+    }
 }

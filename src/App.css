@@ -1,0 +1,54 @@
+/* Main App CSS */
+@import './Styles/layout-fix.css';
+@import './Styles/responsive-master.css';
+
+/* App component styles */
+.App {
+  text-align: center;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Main content margin for fixed navbar */
+main, 
+.page-container,
+.main-content {
+  margin-top: 80px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure all pages start below navbar */
+.page-content {
+  padding-top: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

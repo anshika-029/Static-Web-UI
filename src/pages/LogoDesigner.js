@@ -1,49 +1,115 @@
+// Updated Logo Design Page - Simple and Clean
 import React from 'react'
+import SimpleHero from '../components/SimpleHero'
+import SimpleGrid from '../components/SimpleGrid'
+import SimpleCard from '../components/SimpleCard'
+import Section from '../components/Section'
+import PageContainer from '../components/PageContainer'
 import '../Styles/LogoDesigner.css'
 
 function LogoDesigner() {
-    return (
-        <div>
-            <div className='headbg terms'>
-                <div className='head1'>Logo Designer</div>
-                <div className='head2'>Lorem ipsum dolor elit. Voluptatum.</div>
-                <div className='head2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti iure magnam vitae?</div>
-            </div>
+  // Simple data for logo design services
+  const designServices = [
+    {
+      icon: "🎨",
+      title: "Logo Creation",
+      description: "Custom logo designs that perfectly represent your brand identity and values.",
+      buttonText: "Create Logo",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "🔄",
+      title: "Logo Redesign",
+      description: "Refresh your existing logo with modern design elements while maintaining brand recognition.",
+      buttonText: "Redesign Now",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📱",
+      title: "Brand Identity",
+      description: "Complete brand identity packages including logos, colors, and typography guidelines.",
+      buttonText: "Build Identity",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📁",
+      title: "Logo Variations",
+      description: "Multiple logo variations for different use cases and marketing materials.",
+      buttonText: "Get Variations",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "🎯",
+      title: "Industry-Specific",
+      description: "Specialized logo designs tailored to your specific industry and target audience.",
+      buttonText: "Industry Logos",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "⚡",
+      title: "Fast Delivery",
+      description: "Quick turnaround times without compromising on quality and creativity.",
+      buttonText: "Rush Order",
+      buttonLink: "/contact"
+    }
+  ]
 
-            <div className='carrerh1'>Begin Your Digital Career With Us</div>
-            <div className='carrer-img-jd-grid'>
-                <div><img src='https://adoptostaging.blob.core.windows.net/media/digital-marketing-manager-job-description-template-kaPVim.jpg' /></div>
+  return (
+    <PageContainer>
+      {/* Hero Section */}
+      <SimpleHero 
+        title="Professional Logo Design"
+        subtitle="Create a memorable brand identity with our custom logo design services"
+        buttonText="Get Started"
+        buttonLink="/contact"
+        backgroundImage="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      />
 
-                <div className='carrerjd'>
-                    <div className='jdh'>Job Description :</div>
-                    <div><span className='jdhead'>Experience : </span><span>4+ Years</span></div>
-                    <div><span className='jdhead'>No Of Vacancies : </span><span>33</span></div>
-                    <div><span className='jdhead'>Working Hours : </span><span>08 Am To 06 Pm</span></div>
-                    <div><span className='jdhead'>Working Days : </span><span>Monday To Friday</span></div>
-                    <div><span className='jdhead'>Salary : </span><span>$48k – $55k</span></div>
-                    <div><span className='jdhead'>Deadline : </span><span>21 June 2024</span></div>
-                </div>
-            </div>
-            <div className='dmm'>
+      {/* Services Section */}
+      <Section 
+        title="Our Design Services"
+        subtitle="Professional logo design solutions for every business"
+      >
+        <SimpleGrid columns={3}>
+          {designServices.map((service, index) => (
+            <SimpleCard 
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              buttonText={service.buttonText}
+              buttonLink={service.buttonLink}
+            />
+          ))}
+        </SimpleGrid>
+      </Section>
 
-                <div className='carrerh1'>Logo Designer</div>
-                <p>Vestibulum in ipsum velit. Aliquam libero sem asfds asf, rutrum eu scelerisque ut, vehicula a erat. Phasellus ac sem sed eratposu quam dignissim. Mauris feugiat, nisi nec Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, laboriosam! dapibuasas a gas Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti eaque illum ipsum dolorum libero amet delectus! Officia optio cumque necessitatibus. dictum, ligula nulla gravida ante, non aliquet odio elit ac orci. Curabit Nunc eu rhoncus justo, nec mattis risus auris consequat viverra sapien id lobortis. Vivamus auctor turpis.
-                </p>
-
-                <div className='carrerh2'>Role Overview:</div>
-                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ut libero nisi. In condimentum ante a ultricies tristique. Duis consectetur molestie nunc id dignissim. Nam ultricies quis velit viverra tristique. Integer sagittis nibh eu tristique fringilla. Fusce quis erat vel lacus ultrices sagittis sed vel metus. Cras ante lectus, consectetur ac velit et, commodo fermentum urna. Nulla in urna ut massa vehicula posuere in et lacus.</p>
-
-                <div className='carrerh2'>Primary Responsibilities:</div>
-                <p> ~ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero officia deserunt placeat eveniet odio quidem sit, molestiae architecto eos, voluptatem deleniti, perspiciatis blanditiis!</p><br></br>
-                <p> ~ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt eaque praesentium omnis itaque illo, cum fugit, tenetur veniam perferendis consequatur id! Reiciendis modi dolores temporibus!</p><br></br>
-                <p> ~ Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed officia amet incidunt consequuntur in itaque quidem corrupti delectus ex.</p><br></br>
-                <p> ~ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero fugiat eius recusandae cupiditate soluta ullam dicta, necessitatibus deleniti cum, obcaecati corporis similique qui a.</p>
-
-                <button className='but'>Apply Now</button>
-
-            </div>
-        </div>
-    )
+      {/* Benefits Section */}
+      <Section 
+        title="Why Choose Our Logo Design?"
+        subtitle="The advantages of working with our design experts"
+        className="benefits-section"
+      >
+        <SimpleGrid columns={3}>
+          <SimpleCard 
+            icon="🏆"
+            title="Award-Winning Designs"
+            description="Our designs have won multiple industry awards and recognition."
+          />
+          <SimpleCard 
+            icon="💡"
+            title="Creative Excellence"
+            description="Unique and creative designs that make your brand stand out from the competition."
+          />
+          <SimpleCard 
+            icon="🤝"
+            title="Collaborative Process"
+            description="We work closely with you throughout the design process to ensure satisfaction."
+          />
+        </SimpleGrid>
+      </Section>
+    </PageContainer>
+  )
 }
 
 export default LogoDesigner

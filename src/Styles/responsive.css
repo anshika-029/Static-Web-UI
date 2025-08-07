@@ -1,0 +1,403 @@
+/* Global Responsive Styles */
+/* Base responsive utilities that can be used across all pages */
+
+/* Container and Layout Utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-responsive {
+    display: grid;
+    gap: 20px;
+}
+
+.flex-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Common Page Layout */
+.page-container {
+    margin-top: 15vh;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 1rem;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #172028;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Content Sections */
+.content-section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.content-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-responsive {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #110934;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #26395e;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #110934;
+    border: 2px solid #110934;
+}
+
+.btn-secondary:hover {
+    background-color: #110934;
+    color: white;
+}
+
+/* Images */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Typography */
+.heading-1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.heading-2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.heading-3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.text-large {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.text-medium {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.text-small {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Responsive Breakpoints */
+
+/* Large screens (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    .content-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media screen and (max-width: 1199px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .heading-1 {
+        font-size: 2.2rem;
+    }
+    
+    .heading-2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablets (768px to 991px) */
+@media screen and (max-width: 991px) {
+    .page-container {
+        margin-top: 12vh;
+        padding: 15px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .content-section {
+        padding: 1.5rem;
+    }
+    
+    .content-card {
+        padding: 1.5rem;
+    }
+    
+    .btn-responsive {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .heading-1 {
+        font-size: 2rem;
+    }
+    
+    .heading-2 {
+        font-size: 1.6rem;
+    }
+    
+    .heading-3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .page-container {
+        margin-top: 20vh;
+        padding: 10px;
+    }
+    
+    .page-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .page-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .content-section {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .content-card {
+        padding: 1.2rem;
+    }
+    
+    .btn-responsive {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+    
+    .heading-1 {
+        font-size: 1.8rem;
+    }
+    
+    .heading-2 {
+        font-size: 1.4rem;
+    }
+    
+    .heading-3 {
+        font-size: 1.2rem;
+    }
+    
+    .text-large {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .page-container {
+        margin-top: 25vh;
+        padding: 8px;
+    }
+    
+    .page-header {
+        padding: 1rem 0.5rem;
+    }
+    
+    .page-title {
+        font-size: 1.6rem;
+    }
+    
+    .page-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .content-section {
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .content-card {
+        padding: 1rem;
+    }
+    
+    .btn-responsive {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .heading-1 {
+        font-size: 1.6rem;
+    }
+    
+    .heading-2 {
+        font-size: 1.3rem;
+    }
+    
+    .heading-3 {
+        font-size: 1.1rem;
+    }
+    
+    .text-large,
+    .text-medium {
+        font-size: 1rem;
+    }
+    
+    .text-small {
+        font-size: 0.85rem;
+    }
+}
+
+/* Utility Classes */
+.hide-mobile {
+    display: block;
+}
+
+.show-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+    
+    .show-mobile {
+        display: block;
+    }
+}
+
+/* Flexbox utilities */
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+/* Grid utilities */
+.grid-1 { grid-template-columns: 1fr; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media screen and (max-width: 991px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 767px) {
+    .grid-4,
+    .grid-3,
+    .grid-2 { 
+        grid-template-columns: 1fr; 
+    }
+}

@@ -4,6 +4,8 @@
     display: grid;
     grid-template-columns: 28vw 15vw 13vw 16vw;
     padding: 14vh 8vw 11vh 12vw;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 footer ul li {
@@ -54,4 +56,77 @@ footer ul li a:hover{
 }
 .icon.dead{
     padding: 0;
+}
+
+/* Responsive Design for Footer */
+@media screen and (max-width: 1200px) {
+    .foot {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10vh 6vw 8vh 8vw;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .foot {
+        grid-template-columns: 1fr 1fr;
+        padding: 8vh 4vw 6vh 6vw;
+        gap: 30px;
+    }
+    
+    footer ul li {
+        padding: 3px;
+        font-size: 14px;
+    }
+    
+    .fh {
+        font-size: 16px;
+    }
+    
+    .copyright {
+        font-size: 1rem;
+        padding: 3vh 2vw;
+    }
+    
+    .fhr {
+        width: 90%;
+    }
+    
+    .icon {
+        padding-right: 15px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .foot {
+        grid-template-columns: 1fr;
+        padding: 6vh 4vw;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    footer ul li {
+        padding: 2px;
+        font-size: 13px;
+    }
+    
+    .fh {
+        font-size: 14px;
+    }
+    
+    .copyright {
+        font-size: 0.9rem;
+        padding: 2vh 1vw;
+    }
+    
+    .icon {
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    
+    .logo img {
+        width: 140px !important;
+        height: 40px !important;
+    }
 }

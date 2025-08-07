@@ -56,3 +56,90 @@
     background-color: #ffffffe3;
     transition: 0.3s;
 }
+
+/* Responsive Design for Careers Page */
+@media screen and (max-width: 1200px) {
+    .carrercontainer {
+        margin: 40vh auto 20vh 5vw;
+        width: 90vw;
+        gap: 30px;
+    }
+    
+    .carrercards {
+        width: 42vw;
+        height: 18vh;
+    }
+    
+    .c1 {
+        font-size: 1.3em;
+        margin: 25px 0 0 40px;
+    }
+    
+    .c1h {
+        margin: -22px 0 0 40px;
+    }
+    
+    .carrer-h-row .but {
+        margin: 28px 18px auto auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carrercontainer {
+        margin: 25vh auto 15vh 5vw;
+        width: 90vw;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .carrercards {
+        width: 85vw;
+        height: 20vh;
+        margin: 0 auto;
+    }
+    
+    .c1 {
+        font-size: 1.2em;
+        margin: 20px 0 0 30px;
+    }
+    
+    .c1h {
+        margin: -18px 0 0 30px;
+        font-size: 0.95rem;
+    }
+    
+    .carrer-h-row .but {
+        margin: 25px 15px auto auto;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carrercontainer {
+        margin: 20vh auto 10vh 2.5vw;
+        width: 95vw;
+        gap: 20px;
+    }
+    
+    .carrercards {
+        width: 90vw;
+        height: 18vh;
+    }
+    
+    .c1 {
+        font-size: 1.1em;
+        margin: 15px 0 0 20px;
+    }
+    
+    .c1h {
+        margin: -15px 0 0 20px;
+        font-size: 0.9rem;
+    }
+    
+    .carrer-h-row .but {
+        margin: 20px 10px auto auto;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}

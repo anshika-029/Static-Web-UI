@@ -1,0 +1,132 @@
+/* Global Mobile-First Responsive Enhancement */
+/* Import this in pages that need additional responsive support */
+
+/* Ensure all pages work on mobile */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Global container for all pages */
+.page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 15vh;
+    padding: 1rem;
+}
+
+/* Common responsive patterns */
+.responsive-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.responsive-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.responsive-text {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+}
+
+.responsive-heading {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Button responsive */
+.responsive-button {
+    padding: clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px);
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Responsive spacing utilities */
+.space-y-1 > * + * { margin-top: 0.25rem; }
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.space-y-8 > * + * { margin-top: 2rem; }
+
+/* Mobile-specific utilities */
+@media screen and (max-width: 767px) {
+    .page-wrapper {
+        margin-top: 20vh;
+        padding: 0.5rem;
+    }
+    
+    .responsive-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .responsive-flex {
+        flex-direction: column;
+    }
+    
+    .hide-on-mobile {
+        display: none !important;
+    }
+    
+    .show-on-mobile {
+        display: block !important;
+    }
+    
+    /* Make tables responsive */
+    .responsive-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Responsive form elements */
+    .responsive-form input,
+    .responsive-form select,
+    .responsive-form textarea {
+        width: 100%;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-wrapper {
+        margin-top: 25vh;
+        padding: 0.25rem;
+    }
+    
+    .responsive-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Ultra-wide screen optimization */
+@media screen and (min-width: 1600px) {
+    .page-wrapper {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,124 @@
+/* BlogCard Component Styles */
+.blog-card {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.blog-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem;
+    transition: background 0.3s ease;
+}
+
+.blog-card:hover .blog-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+
+.blog-date-tag {
+    background-color: white;
+    color: black;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.blog-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.blog-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.blog-read-more {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.blog-read-more:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .blog-card {
+        height: 300px;
+    }
+    
+    .blog-overlay {
+        padding: 1.5rem;
+    }
+    
+    .blog-title {
+        font-size: 1.2rem;
+    }
+    
+    .blog-description {
+        font-size: 0.85rem;
+    }
+    
+    .blog-date-tag {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+    
+    .blog-read-more {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-card {
+        height: 250px;
+    }
+    
+    .blog-overlay {
+        padding: 1rem;
+    }
+    
+    .blog-title {
+        font-size: 1.1rem;
+    }
+    
+    .blog-description {
+        font-size: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}

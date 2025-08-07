@@ -1,0 +1,222 @@
+/* Consulting Page Styles */
+@import './responsive.css';
+
+.consulting-page {
+    margin-top: 15vh;
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+.consulting-hero {
+    background: linear-gradient(135deg, #110934 0%, #26395e 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.consulting-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.consulting-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.consulting-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.consulting-text {
+    padding: 2rem;
+}
+
+.consulting-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #110934;
+}
+
+.consulting-text p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.consulting-image {
+    text-align: center;
+}
+
+.consulting-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.consulting-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.consulting-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.consulting-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.consulting-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #110934;
+}
+
+.consulting-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.consulting-card .icon {
+    font-size: 3rem;
+    color: #26395e;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+    .consulting-page {
+        margin-top: 12vh;
+        padding: 1.5rem;
+    }
+    
+    .consulting-hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .consulting-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .consulting-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .consulting-text {
+        padding: 1.5rem;
+    }
+    
+    .consulting-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .consulting-services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .consulting-page {
+        margin-top: 20vh;
+        padding: 1rem;
+    }
+    
+    .consulting-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .consulting-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .consulting-hero p {
+        font-size: 1rem;
+    }
+    
+    .consulting-text {
+        padding: 1rem;
+    }
+    
+    .consulting-text h2 {
+        font-size: 1.6rem;
+    }
+    
+    .consulting-services {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .consulting-card {
+        padding: 1.5rem;
+    }
+    
+    .consulting-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .consulting-card .icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .consulting-page {
+        margin-top: 25vh;
+        padding: 0.5rem;
+    }
+    
+    .consulting-hero {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .consulting-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .consulting-hero p {
+        font-size: 0.95rem;
+    }
+    
+    .consulting-text {
+        padding: 0.8rem;
+    }
+    
+    .consulting-text h2 {
+        font-size: 1.4rem;
+    }
+    
+    .consulting-card {
+        padding: 1.2rem;
+    }
+    
+    .consulting-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .consulting-card .icon {
+        font-size: 2rem;
+    }
+}

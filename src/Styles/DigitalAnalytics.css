@@ -1,0 +1,176 @@
+/* Digital Analytics Page Styles */
+@import './responsive.css';
+
+.digitalanalytics-page {
+    margin-top: 15vh;
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+.digitalanalytics-hero {
+    background: linear-gradient(135deg, #110934 0%, #26395e 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.digitalanalytics-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.digitalanalytics-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.analytics-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.analytics-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.analytics-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #110934;
+}
+
+.analytics-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.analytics-card .icon {
+    font-size: 3rem;
+    color: #26395e;
+    margin-bottom: 1rem;
+}
+
+.analytics-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 3rem 0;
+    align-items: center;
+}
+
+.analytics-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #110934;
+}
+
+.analytics-text p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.analytics-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+    .digitalanalytics-page {
+        margin-top: 12vh;
+        padding: 1.5rem;
+    }
+    
+    .digitalanalytics-hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .digitalanalytics-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .analytics-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .analytics-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .analytics-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .digitalanalytics-page {
+        margin-top: 20vh;
+        padding: 1rem;
+    }
+    
+    .digitalanalytics-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .digitalanalytics-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .analytics-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .analytics-card {
+        padding: 1.5rem;
+    }
+    
+    .analytics-text h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .digitalanalytics-page {
+        margin-top: 25vh;
+        padding: 0.5rem;
+    }
+    
+    .digitalanalytics-hero {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .digitalanalytics-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .analytics-card {
+        padding: 1.2rem;
+    }
+    
+    .analytics-text h2 {
+        font-size: 1.4rem;
+    }
+}

@@ -126,3 +126,137 @@
 .grid4-card a{
     font-weight: 500;
 }
+
+/* Responsive Design for About Page */
+@media screen and (max-width: 1200px) {
+    .aboutus-grid1, .aboutus-grid2, .aboutus-grid3 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .about-grid-col1 :nth-child(1), .about-grid2-col1 :nth-child(1) {
+        font-size: 2.5em;
+        margin-left: 4vw;
+        text-align: center;
+    }
+    
+    .about-grid-col1 :nth-child(2), .about-grid2-col1 :nth-child(2) {
+        font-size: 1rem;
+        margin: 0 2vw;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .about-grid-col2 img, .aboutus-grid2 img {
+        width: 80vw;
+        height: 35vh;
+        margin: 2vh auto;
+        display: block;
+    }
+    
+    .aboutus-grid4 {
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        padding: 30px;
+    }
+    
+    .g4-h {
+        font-size: 2.5em;
+        padding: 4vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutus-grid1 {
+        margin-top: 20vh;
+    }
+    
+    .about-grid-col1 :nth-child(1), .about-grid2-col1 :nth-child(1) {
+        font-size: 2em;
+        margin-left: 2vw;
+    }
+    
+    .about-grid-col1 :nth-child(2), .about-grid2-col1 :nth-child(2) {
+        font-size: 0.9rem;
+        margin: 0 1vw;
+        padding: 15px;
+    }
+    
+    .about-grid-col2 img, .aboutus-grid2 img {
+        width: 90vw;
+        height: 30vh;
+        margin: 1vh auto;
+    }
+    
+    .aboutus-grid4 {
+        grid-template-columns: 1fr;
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .g4-h {
+        font-size: 2em;
+        padding: 3vh;
+    }
+    
+    .g4-p {
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+    .grid4-head {
+        font-size: 1.5em;
+    }
+    
+    .grid4-card {
+        margin: 10px;
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutus-grid1 {
+        margin-top: 15vh;
+    }
+    
+    .about-grid-col1 :nth-child(1), .about-grid2-col1 :nth-child(1) {
+        font-size: 1.5em;
+        margin-left: 1vw;
+    }
+    
+    .about-grid-col1 :nth-child(2), .about-grid2-col1 :nth-child(2) {
+        font-size: 0.8rem;
+        margin: 0 0.5vw;
+        padding: 10px;
+    }
+    
+    .about-grid-col2 img, .aboutus-grid2 img {
+        width: 95vw;
+        height: 25vh;
+    }
+    
+    .g4-h {
+        font-size: 1.5em;
+        padding: 2vh;
+    }
+    
+    .g4-p {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+    
+    .grid4-head {
+        font-size: 1.2em;
+    }
+    
+    .grid4-card {
+        margin: 5px;
+        padding: 12px 15px;
+    }
+    
+    .grid4-card p {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

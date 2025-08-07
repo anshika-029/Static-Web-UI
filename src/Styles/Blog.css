@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
+    max-width: 90vw;
+    box-sizing: border-box;
 }
 
 .blogcards {
@@ -13,8 +15,7 @@
 .b1 {
     background-image: url('https://img.freepik.com/premium-photo/laptop-notebook-desk_1048944-30522547.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
-    background-position-x: right;
-    background-position-y: bottom;
+    background-position: right bottom;
 }
 
 
@@ -22,8 +23,7 @@
     background: linear-gradient(rgba(35, 122, 169, 0.89), rgba(0, 0, 0, 0.78)), url('https://img.freepik.com/premium-photo/laptop-notebook-desk_1048944-30522547.jpg?size=626&ext=jpg&ga=GA1.1.1730006803.1721025434&semt=ais_user');
     background-size: cover;
     cursor: pointer;
-    background-position-x: right;
-    background-position-y: bottom;
+    background-position: right bottom;
 } 
 
 .b1h {
@@ -152,4 +152,87 @@
     text-align: center;
     transform: skew(-18deg);
     margin: 5px;
+}
+
+/* Responsive Design for Blog Page */
+@media screen and (max-width: 1200px) {
+    .blogcontainer {
+        margin: 18vh 6vw;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    
+    .blogcards {
+        height: 45vh;
+    }
+    
+    .b1h, .b2h, .b3h, .b4h, .b5h, .b6h {
+        font-size: 1.2em;
+        margin: 45% 6px 0 15px;
+    }
+    
+    .pbdate {
+        width: 15vw;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blogcontainer {
+        margin: 15vh 4vw;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .blogcards {
+        height: 40vh;
+        margin: 0 auto;
+        width: 90vw;
+    }
+    
+    .b1h, .b2h, .b3h, .b4h, .b5h, .b6h {
+        font-size: 1.1em;
+        margin: 40% 5px 0 12px;
+    }
+    
+    .pbdate {
+        width: 20vw;
+        font-size: 0.8em;
+        height: 4vh;
+    }
+    
+    .blogcards .but {
+        margin: 12px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blogcontainer {
+        margin: 12vh 2vw;
+        gap: 30px;
+    }
+    
+    .blogcards {
+        height: 35vh;
+        width: 95vw;
+    }
+    
+    .b1h, .b2h, .b3h, .b4h, .b5h, .b6h {
+        font-size: 1rem;
+        margin: 35% 4px 0 10px;
+    }
+    
+    .pbdate {
+        width: 25vw;
+        font-size: 0.9em;
+        height: 3.5vh;
+    }
+    
+    .blogcards .but {
+        margin: 10px;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
 }

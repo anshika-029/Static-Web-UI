@@ -1,48 +1,114 @@
+// Updated CRM Page - Simple and Clean
 import React from 'react'
+import SimpleHero from '../components/SimpleHero'
+import SimpleGrid from '../components/SimpleGrid'
+import SimpleCard from '../components/SimpleCard'
+import Section from '../components/Section'
+import PageContainer from '../components/PageContainer'
 import '../Styles/Crm.css'
 
 function Crm() {
+  // Simple data for CRM services
+  const crmServices = [
+    {
+      icon: "👥",
+      title: "Customer Management",
+      description: "Organize and manage all your customer information in one centralized platform.",
+      buttonText: "Manage Customers",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📊",
+      title: "Sales Pipeline",
+      description: "Track your sales process from lead generation to deal closure with visual pipelines.",
+      buttonText: "Track Sales",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📧",
+      title: "Email Integration",
+      description: "Seamlessly integrate email campaigns and communications within your CRM system.",
+      buttonText: "Connect Email",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📈",
+      title: "Analytics & Reports",
+      description: "Get detailed insights into your sales performance with comprehensive reporting tools.",
+      buttonText: "View Reports",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "🤖",
+      title: "Automation",
+      description: "Automate repetitive tasks and workflows to improve efficiency and productivity.",
+      buttonText: "Automate Now",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📱",
+      title: "Mobile Access",
+      description: "Access your CRM data anytime, anywhere with our mobile-friendly platform.",
+      buttonText: "Go Mobile",
+      buttonLink: "/contact"
+    }
+  ]
+
   return (
-    <div>
-      <div className='headbg terms'>
-        <div className='head1'>CRM Manager</div>
-        <div className='head2'>Lorem ipsum dolor elit. Voluptatum.</div>
-        <div className='head2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti iure magnam vitae?</div>
-      </div>
+    <PageContainer>
+      {/* Hero Section */}
+      <SimpleHero 
+        title="CRM Management Solutions"
+        subtitle="Streamline your customer relationships and boost sales with our powerful CRM platform"
+        buttonText="Get Started"
+        buttonLink="/contact"
+        backgroundImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      />
 
-      <div className='carrerh1'>Begin Your Digital Career With Us</div>
-      <div className='carrer-img-jd-grid'>
-        <div><img src='https://adoptostaging.blob.core.windows.net/media/digital-marketing-manager-job-description-template-kaPVim.jpg' /></div>
+      {/* Services Section */}
+      <Section 
+        title="Our CRM Features"
+        subtitle="Everything you need to manage customer relationships effectively"
+      >
+        <SimpleGrid columns={3}>
+          {crmServices.map((service, index) => (
+            <SimpleCard 
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              buttonText={service.buttonText}
+              buttonLink={service.buttonLink}
+            />
+          ))}
+        </SimpleGrid>
+      </Section>
 
-        <div className='carrerjd'>
-          <div className='jdh'>Job Description :</div>
-          <div><span className='jdhead'>Experience : </span><span>4+ Years</span></div>
-          <div><span className='jdhead'>No Of Vacancies : </span><span>33</span></div>
-          <div><span className='jdhead'>Working Hours : </span><span>08 Am To 06 Pm</span></div>
-          <div><span className='jdhead'>Working Days : </span><span>Monday To Friday</span></div>
-          <div><span className='jdhead'>Salary : </span><span>$48k – $55k</span></div>
-          <div><span className='jdhead'>Deadline : </span><span>21 June 2024</span></div>
-        </div>
-      </div>
-      <div className='dmm'>
-
-        <div className='carrerh1'>CRM Manager</div>
-        <p>Vestibulum in ipsum velit. Aliquam libero sem asfds asf, rutrum eu scelerisque ut, vehicula a erat. Phasellus ac sem sed eratposu quam dignissim. Mauris feugiat, nisi nec Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, laboriosam! dapibuasas a gas Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti eaque illum ipsum dolorum libero amet delectus! Officia optio cumque necessitatibus. dictum, ligula nulla gravida ante, non aliquet odio elit ac orci. Curabit Nunc eu rhoncus justo, nec mattis risus auris consequat viverra sapien id lobortis. Vivamus auctor turpis.
-        </p>
-
-        <div className='carrerh2'>Role Overview:</div>
-        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ut libero nisi. In condimentum ante a ultricies tristique. Duis consectetur molestie nunc id dignissim. Nam ultricies quis velit viverra tristique. Integer sagittis nibh eu tristique fringilla. Fusce quis erat vel lacus ultrices sagittis sed vel metus. Cras ante lectus, consectetur ac velit et, commodo fermentum urna. Nulla in urna ut massa vehicula posuere in et lacus.</p>
-
-        <div className='carrerh2'>Primary Responsibilities:</div>
-        <p> ~ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero officia deserunt placeat eveniet odio quidem sit, molestiae architecto eos, voluptatem deleniti, perspiciatis blanditiis!</p><br></br>
-        <p> ~ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt eaque praesentium omnis itaque illo, cum fugit, tenetur veniam perferendis consequatur id! Reiciendis modi dolores temporibus!</p><br></br>
-        <p> ~ Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed officia amet incidunt consequuntur in itaque quidem corrupti delectus ex.</p><br></br>
-        <p> ~ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero fugiat eius recusandae cupiditate soluta ullam dicta, necessitatibus deleniti cum, obcaecati corporis similique qui a.</p>
-
-        <button className='but'>Apply Now</button>
-
-      </div>
-    </div>
+      {/* Benefits Section */}
+      <Section 
+        title="Why Choose Our CRM?"
+        subtitle="The benefits of using our customer relationship management platform"
+        className="benefits-section"
+      >
+        <SimpleGrid columns={3}>
+          <SimpleCard 
+            icon="🎯"
+            title="Increased Sales"
+            description="Boost your sales conversion rates with better lead management and follow-up."
+          />
+          <SimpleCard 
+            icon="⚡"
+            title="Improved Efficiency"
+            description="Automate manual tasks and streamline your sales processes for better productivity."
+          />
+          <SimpleCard 
+            icon="🔒"
+            title="Secure & Reliable"
+            description="Keep your customer data safe with enterprise-grade security and reliability."
+          />
+        </SimpleGrid>
+      </Section>
+    </PageContainer>
   )
 }
 

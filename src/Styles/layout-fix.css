@@ -1,0 +1,171 @@
+/* Layout Fix CSS - Prevents Overflow and Layout Issues */
+
+/* Global HTML and Body fixes */
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Universal box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll on all containers */
+.container, .page-container, .section-container {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Fix for grid containers */
+.responsive-grid, .grid-responsive {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix for flex containers */
+.responsive-flex, .flex-responsive {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Video responsiveness */
+video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix for cards and components */
+.simple-card, .blog-card, .service-card {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix for hero sections */
+.simple-hero, .hero-section {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+/* Fix for form elements */
+input, textarea, select {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Fix for buttons */
+button, .btn, .but {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Prevent text overflow */
+.text-container {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Fix for absolute positioned elements */
+.absolute-element {
+    max-width: 100vw;
+    right: 0;
+    left: 0;
+}
+
+/* Mobile specific fixes */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .page-container {
+        padding: 10px;
+        margin-top: 20vh;
+    }
+    
+    /* Fix for specific problematic elements */
+    .blogcontainer {
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin-left: 2.5vw !important;
+        margin-right: 2.5vw !important;
+    }
+    
+    .flexwrap {
+        width: 95vw !important;
+        max-width: 95vw !important;
+        margin-left: 2.5vw !important;
+        margin-right: 2.5vw !important;
+    }
+    
+    .textimg {
+        width: 95% !important;
+        max-width: 95% !important;
+    }
+    
+    .first {
+        width: 95% !important;
+        max-width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container, .page-container {
+        padding: 5px;
+    }
+    
+    /* Extra mobile fixes */
+    .carrercontainer {
+        width: 95vw !important;
+        max-width: 95vw !important;
+    }
+    
+    .foot {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Fix for commonly problematic elements */
+.headbg, .head1, .head2 {
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.backg {
+    max-width: 90vw !important;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Fix for navigation */
+header {
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Fix for footer */
+footer {
+    max-width: 100vw;
+    box-sizing: border-box;
+}

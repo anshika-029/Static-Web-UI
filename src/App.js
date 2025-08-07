@@ -11,7 +11,6 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Consulting from './pages/Consulting';
-import Resources from './pages/Resources'
 import Accounting from './pages/Accounting'
 import Marketing from './pages/Marketing'
 import Carrers from './pages/Carrers';
@@ -40,7 +39,6 @@ function App() {
     <Route path='/about' element={<About/>}/>
     <Route path='/carrers' element={<Carrers/>}/>
     <Route path='/consulting' element={<Consulting/>}/>
-    <Route path='/resources' element={<Resources/>}/>
     <Route path='/accounting' element={<Accounting/>}/>
     <Route path='/digitalmarketingmanager' element={<DigitalMarketingManager/>}/>
     <Route path='/socialmediamanager' element={<SocialMediaManager/>}/>

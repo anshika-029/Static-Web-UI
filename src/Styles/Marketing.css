@@ -1,0 +1,293 @@
+/* Marketing Page Styles */
+@import './responsive.css';
+
+.marketing-page {
+    margin-top: 15vh;
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+.marketing-hero {
+    background: linear-gradient(135deg, #110934 0%, #26395e 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.marketing-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.marketing-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.marketing-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.marketing-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.marketing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.marketing-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #110934;
+}
+
+.marketing-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.marketing-card .icon {
+    font-size: 3rem;
+    color: #26395e;
+    margin-bottom: 1rem;
+}
+
+.marketing-stats {
+    background: #f8f9fa;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin: 3rem 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #110934;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.marketing-cta {
+    background: linear-gradient(135deg, #26395e 0%, #110934 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 3rem 0;
+}
+
+.marketing-cta h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.marketing-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    color: #110934;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+    .marketing-page {
+        margin-top: 12vh;
+        padding: 1.5rem;
+    }
+    
+    .marketing-hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .marketing-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .marketing-services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .marketing-card {
+        padding: 1.5rem;
+    }
+    
+    .marketing-stats {
+        padding: 2rem 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .marketing-cta {
+        padding: 2rem 1.5rem;
+    }
+    
+    .marketing-cta h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .marketing-page {
+        margin-top: 20vh;
+        padding: 1rem;
+    }
+    
+    .marketing-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .marketing-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .marketing-hero p {
+        font-size: 1rem;
+    }
+    
+    .marketing-services {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .marketing-card {
+        padding: 1.2rem;
+    }
+    
+    .marketing-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .marketing-card .icon {
+        font-size: 2.5rem;
+    }
+    
+    .marketing-stats {
+        padding: 1.5rem 1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+    
+    .marketing-cta {
+        padding: 1.5rem 1rem;
+    }
+    
+    .marketing-cta h2 {
+        font-size: 1.6rem;
+    }
+    
+    .marketing-cta p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .marketing-page {
+        margin-top: 25vh;
+        padding: 0.5rem;
+    }
+    
+    .marketing-hero {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .marketing-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .marketing-hero p {
+        font-size: 0.95rem;
+    }
+    
+    .marketing-card {
+        padding: 1rem;
+    }
+    
+    .marketing-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .marketing-card .icon {
+        font-size: 2rem;
+    }
+    
+    .marketing-stats {
+        padding: 1rem 0.8rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 1.8rem;
+    }
+    
+    .marketing-cta {
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .marketing-cta h2 {
+        font-size: 1.4rem;
+    }
+    
+    .marketing-cta p {
+        font-size: 0.95rem;
+    }
+    
+    .cta-button {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
+}

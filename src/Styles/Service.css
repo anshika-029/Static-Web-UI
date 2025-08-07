@@ -61,3 +61,97 @@
 .s4:hover{
     transition: 0.5s;
 }
+
+/* Responsive Design for Service Page */
+@media screen and (max-width: 1200px) {
+    .service-container {
+        width: 90vw;
+        margin: 35vh auto 20vh 5vw;
+        gap: 40px;
+    }
+    
+    .servicecards {
+        width: 42vw;
+    }
+    
+    .s2 img {
+        width: 42vw;
+        height: 25vh;
+    }
+    
+    .s1 {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    
+    .s3 {
+        font-size: 1rem;
+        padding: 15px 12px 12px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-container {
+        width: 95vw;
+        margin: 25vh auto 15vh 2.5vw;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .servicecards {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    .s2 img {
+        width: 90vw;
+        height: 30vh;
+    }
+    
+    .s1 {
+        font-size: 1.4em;
+        padding: 12px;
+    }
+    
+    .s3 {
+        font-size: 0.95rem;
+        padding: 12px 10px 10px 25px;
+    }
+    
+    .s4 {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-container {
+        width: 98vw;
+        margin: 20vh auto 10vh 1vw;
+        gap: 20px;
+    }
+    
+    .servicecards {
+        width: 95vw;
+    }
+    
+    .s2 img {
+        width: 95vw;
+        height: 25vh;
+    }
+    
+    .s1 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    .s3 {
+        font-size: 0.9rem;
+        padding: 10px 8px 8px 20px;
+    }
+    
+    .s4 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

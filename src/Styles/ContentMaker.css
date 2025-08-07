@@ -1,0 +1,132 @@
+/* Content Maker Page Styles */
+@import './responsive.css';
+
+.contentmaker-page {
+    margin-top: 15vh;
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+.contentmaker-hero {
+    background: linear-gradient(135deg, #110934 0%, #26395e 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.contentmaker-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contentmaker-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contentmaker-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.contentmaker-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.contentmaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contentmaker-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #110934;
+}
+
+.contentmaker-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.contentmaker-card .icon {
+    font-size: 3rem;
+    color: #26395e;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 991px) {
+    .contentmaker-page {
+        margin-top: 12vh;
+        padding: 1.5rem;
+    }
+    
+    .contentmaker-hero {
+        padding: 3rem 1.5rem;
+    }
+    
+    .contentmaker-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .contentmaker-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contentmaker-page {
+        margin-top: 20vh;
+        padding: 1rem;
+    }
+    
+    .contentmaker-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .contentmaker-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .contentmaker-services {
+        grid-template-columns: 1fr;
+    }
+    
+    .contentmaker-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contentmaker-page {
+        margin-top: 25vh;
+        padding: 0.5rem;
+    }
+    
+    .contentmaker-hero {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .contentmaker-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .contentmaker-card {
+        padding: 1.2rem;
+    }
+}

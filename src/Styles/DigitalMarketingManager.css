@@ -56,5 +56,148 @@
 
 .dmm .but{
     margin: 6vh 0 10vh 15vw;
+}
 
+/* Responsive Design for Digital Marketing Manager Page */
+@media screen and (max-width: 1200px) {
+    .carrerh1 {
+        margin: 12vh 0 3vh 10vw;
+        font-size: 2.2em;
+    }
+    
+    .carrer-img-jd-grid {
+        width: 75%;
+        margin-left: 10vw;
+        gap: 20px;
+    }
+    
+    .carrer-img-jd-grid img {
+        width: 40vw;
+        height: 30vh;
+    }
+    
+    .carrerjd {
+        padding: 25px 0 15px 25px;
+    }
+    
+    .dmm p {
+        padding: 0 10vw;
+        font-size: 1rem;
+    }
+    
+    .carrerh2 {
+        margin: 4vh 0 1vh 10vw;
+        font-size: 1.5em;
+    }
+    
+    .dmm .but {
+        margin: 5vh 0 8vh 10vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carrerh1 {
+        margin: 10vh 0 2vh 5vw;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .carrer-img-jd-grid {
+        width: 90%;
+        margin-left: 5vw;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .carrer-img-jd-grid img {
+        width: 80vw;
+        height: 35vh;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .carrerjd {
+        padding: 20px 0 12px 20px;
+        margin: 0 auto;
+        width: 85vw;
+    }
+    
+    .jdh {
+        font-size: 1.2em;
+    }
+    
+    .jdhead {
+        font-size: 1rem;
+    }
+    
+    .carrerjd div {
+        height: auto;
+        padding: 2px 0;
+    }
+    
+    .dmm p {
+        padding: 0 5vw;
+        font-size: 0.95rem;
+        text-align: center;
+    }
+    
+    .carrerh2 {
+        margin: 3vh 0 1vh 5vw;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .dmm .but {
+        margin: 4vh auto 6vh auto;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carrerh1 {
+        margin: 8vh 0 2vh 2vw;
+        font-size: 1.5em;
+    }
+    
+    .carrer-img-jd-grid {
+        width: 95%;
+        margin-left: 2.5vw;
+        gap: 20px;
+    }
+    
+    .carrer-img-jd-grid img {
+        width: 90vw;
+        height: 30vh;
+    }
+    
+    .carrerjd {
+        padding: 15px 0 10px 15px;
+        width: 90vw;
+    }
+    
+    .jdh {
+        font-size: 1.1em;
+        margin: 6px;
+    }
+    
+    .jdhead {
+        font-size: 0.95rem;
+    }
+    
+    .dmm p {
+        padding: 0 2vw;
+        font-size: 0.9rem;
+    }
+    
+    .carrerh2 {
+        margin: 2vh 0 1vh 2vw;
+        font-size: 1.1em;
+    }
+    
+    .dmm .but {
+        margin: 3vh auto 5vh auto;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }

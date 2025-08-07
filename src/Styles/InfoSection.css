@@ -1,0 +1,130 @@
+/* InfoSection Component Styles */
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 4rem 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-section.reverse {
+    direction: rtl;
+}
+
+.info-section.reverse .info-content,
+.info-section.reverse .info-image {
+    direction: ltr;
+}
+
+.info-content {
+    padding: 2rem;
+}
+
+.info-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #110934;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.info-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.info-button {
+    padding: 12px 24px;
+    background-color: #110934;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.info-button:hover {
+    background-color: #26395e;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+    .info-section,
+    .info-section.reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        direction: ltr;
+        margin: 3rem 1.5rem;
+    }
+    
+    .info-content {
+        padding: 1.5rem;
+    }
+    
+    .info-title {
+        font-size: 1.8rem;
+    }
+    
+    .info-description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-section {
+        margin: 2rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .info-content {
+        padding: 1rem;
+    }
+    
+    .info-title {
+        font-size: 1.6rem;
+    }
+    
+    .info-description {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .info-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info-section {
+        margin: 1rem 0.5rem;
+    }
+    
+    .info-content {
+        padding: 0.8rem;
+    }
+    
+    .info-title {
+        font-size: 1.4rem;
+    }
+    
+    .info-description {
+        font-size: 0.9rem;
+    }
+}

@@ -1,48 +1,114 @@
+// Updated Content Creator Page - Simple and Clean
 import React from 'react'
+import SimpleHero from '../components/SimpleHero'
+import SimpleGrid from '../components/SimpleGrid'
+import SimpleCard from '../components/SimpleCard'
+import Section from '../components/Section'
+import PageContainer from '../components/PageContainer'
 import '../Styles/ContentMaker.css'
 
 function ContentMaker() {
+  // Simple data for content creation services
+  const contentServices = [
+    {
+      icon: "✍️",
+      title: "Blog Writing",
+      description: "Engaging and SEO-optimized blog posts that attract and retain your audience.",
+      buttonText: "Start Writing",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📱",
+      title: "Social Media Content",
+      description: "Creative and engaging content for all your social media platforms.",
+      buttonText: "Create Content",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "🎥",
+      title: "Video Scripts",
+      description: "Compelling video scripts that tell your story and engage your viewers.",
+      buttonText: "Write Scripts",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📧",
+      title: "Email Campaigns",
+      description: "Persuasive email content that drives conversions and builds relationships.",
+      buttonText: "Build Campaigns",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "🎨",
+      title: "Creative Copywriting",
+      description: "Compelling copy for websites, ads, and marketing materials.",
+      buttonText: "Get Copy",
+      buttonLink: "/contact"
+    },
+    {
+      icon: "📚",
+      title: "Content Strategy",
+      description: "Comprehensive content strategies aligned with your business goals.",
+      buttonText: "Plan Strategy",
+      buttonLink: "/contact"
+    }
+  ]
+
   return (
-    <div>
-      <div className='headbg terms'>
-        <div className='head1'>Content Maker</div>
-        <div className='head2'>Lorem ipsum dolor elit. Voluptatum.</div>
-        <div className='head2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corrupti iure magnam vitae?</div>
-      </div>
+    <PageContainer>
+      {/* Hero Section */}
+      <SimpleHero 
+        title="Content Creation Services"
+        subtitle="Professional content that engages your audience and drives results"
+        buttonText="Get Started"
+        buttonLink="/contact"
+        backgroundImage="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      />
 
-      <div className='carrerh1'>Begin Your Digital Career With Us</div>
-      <div className='carrer-img-jd-grid'>
-        <div><img src='https://adoptostaging.blob.core.windows.net/media/digital-marketing-manager-job-description-template-kaPVim.jpg' /></div>
+      {/* Services Section */}
+      <Section 
+        title="Our Content Services"
+        subtitle="Complete content creation solutions for your business needs"
+      >
+        <SimpleGrid columns={3}>
+          {contentServices.map((service, index) => (
+            <SimpleCard 
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              buttonText={service.buttonText}
+              buttonLink={service.buttonLink}
+            />
+          ))}
+        </SimpleGrid>
+      </Section>
 
-        <div className='carrerjd'>
-          <div className='jdh'>Job Description :</div>
-          <div><span className='jdhead'>Experience : </span><span>4+ Years</span></div>
-          <div><span className='jdhead'>No Of Vacancies : </span><span>33</span></div>
-          <div><span className='jdhead'>Working Hours : </span><span>08 Am To 06 Pm</span></div>
-          <div><span className='jdhead'>Working Days : </span><span>Monday To Friday</span></div>
-          <div><span className='jdhead'>Salary : </span><span>$48k – $55k</span></div>
-          <div><span className='jdhead'>Deadline : </span><span>21 June 2024</span></div>
-        </div>
-      </div>
-      <div className='dmm'>
-
-        <div className='carrerh1'>Content Maker</div>
-        <p>Vestibulum in ipsum velit. Aliquam libero sem asfds asf, rutrum eu scelerisque ut, vehicula a erat. Phasellus ac sem sed eratposu quam dignissim. Mauris feugiat, nisi nec Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, laboriosam! dapibuasas a gas Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti eaque illum ipsum dolorum libero amet delectus! Officia optio cumque necessitatibus. dictum, ligula nulla gravida ante, non aliquet odio elit ac orci. Curabit Nunc eu rhoncus justo, nec mattis risus auris consequat viverra sapien id lobortis. Vivamus auctor turpis.
-        </p>
-
-        <div className='carrerh2'>Role Overview:</div>
-        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ut libero nisi. In condimentum ante a ultricies tristique. Duis consectetur molestie nunc id dignissim. Nam ultricies quis velit viverra tristique. Integer sagittis nibh eu tristique fringilla. Fusce quis erat vel lacus ultrices sagittis sed vel metus. Cras ante lectus, consectetur ac velit et, commodo fermentum urna. Nulla in urna ut massa vehicula posuere in et lacus.</p>
-
-        <div className='carrerh2'>Primary Responsibilities:</div>
-        <p> ~ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero officia deserunt placeat eveniet odio quidem sit, molestiae architecto eos, voluptatem deleniti, perspiciatis blanditiis!</p><br></br>
-        <p> ~ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt eaque praesentium omnis itaque illo, cum fugit, tenetur veniam perferendis consequatur id! Reiciendis modi dolores temporibus!</p><br></br>
-        <p> ~ Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed officia amet incidunt consequuntur in itaque quidem corrupti delectus ex.</p><br></br>
-        <p> ~ Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero fugiat eius recusandae cupiditate soluta ullam dicta, necessitatibus deleniti cum, obcaecati corporis similique qui a.</p>
-
-        <button className='but'>Apply Now</button>
-
-      </div>
-    </div>
+      {/* Benefits Section */}
+      <Section 
+        title="Why Choose Our Content Creation?"
+        subtitle="The advantages of working with our content experts"
+        className="benefits-section"
+      >
+        <SimpleGrid columns={3}>
+          <SimpleCard 
+            icon="🎯"
+            title="Audience-Focused"
+            description="We create content that resonates with your target audience and drives engagement."
+          />
+          <SimpleCard 
+            icon="📈"
+            title="Results-Driven"
+            description="Our content strategies are designed to achieve your specific business objectives."
+          />
+          <SimpleCard 
+            icon="⚡"
+            title="Fast Delivery"
+            description="High-quality content delivered on time, every time, without compromising quality."
+          />
+        </SimpleGrid>
+      </Section>
+    </PageContainer>
   )
 }
 

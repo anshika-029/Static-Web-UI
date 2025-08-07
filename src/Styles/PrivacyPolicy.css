@@ -16,3 +16,18 @@ span.termspara{
 .last{
     padding-bottom: 20px;
 }
+
+/* Responsive Design for Privacy Policy Page */
+@media screen and (max-width: 768px) {
+    .termshp {
+        font-size: 1.1em;
+        padding: 8px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .termshp {
+        font-size: 1rem;
+        padding: 6px 0;
+    }
+}
